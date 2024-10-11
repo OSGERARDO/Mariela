@@ -169,3 +169,120 @@ img {
     right: 30px;
     top: 20%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        /* Reduce el padding */
+        flex-direction: column;
+        /* Cambia a columna para mejor disposición */
+        align-items: flex-start;
+        /* Alinea elementos al inicio */
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        /* Cambia a columna */
+        gap: 10px;
+        /* Reduce el espacio entre enlaces */
+    }
+
+    .hero {
+        padding: 50px 20px;
+        /* Reduce el padding */
+        flex-direction: column;
+        /* Cambia a columna */
+        align-items: center;
+        /* Alinea los elementos al centro */
+        height: auto;
+        /* Ajusta la altura para contenido dinámico */
+    }
+
+    .hero__content,
+    .hero__intro {
+        width: 100%;
+        /* Usa el ancho completo */
+        text-align: center;
+        /* Centra el texto */
+    }
+
+    .hero__content h2 {
+        font-size: 30px;
+        /* Reduce el tamaño de la fuente */
+        line-height: 40px;
+        /* Reduce el interlineado */
+    }
+
+    .hero__intro h3 {
+        font-size: 24px;
+        /* Reduce el tamaño de la fuente */
+        line-height: 30px;
+        /* Reduce el interlineado */
+    }
+
+    .hero__intro p {
+        font-size: 14px;
+        /* Ajusta el tamaño de la fuente */
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        /* Cambia a columna */
+        gap: 8px;
+        /* Reduce el espacio entre botones */
+    }
+
+    .hero__actions .btn {
+        padding: 8px 16px;
+        /* Ajusta el padding */
+        font-size: 14px;
+        /* Aumenta el tamaño de la fuente */
+    }
+
+    .btn {
+        width: 100%;
+        /* Botones ocupan el ancho completo */
+    }
+
+    .navbar__actions {
+        flex-direction: column;
+        /* Cambia a columna */
+        align-items: flex-start;
+        /* Alinea elementos al inicio */
+        gap: 10px;
+        /* Reduce el espacio entre acciones */
+    }
+
+    .navbar__location h5 {
+        font-size: 14px;
+        /* Aumenta el tamaño de la fuente */
+    }
+
+    .navbar__location p {
+        font-size: 12px;
+        /* Aumenta el tamaño de la fuente */
+    }
+
+    img {
+        width: 100%;
+        /* Asegura que las imágenes sean responsivas */
+        height: auto;
+        /* Mantiene la proporción */
+    }
+}
