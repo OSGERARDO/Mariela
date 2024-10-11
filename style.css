@@ -44,7 +44,7 @@ img {
 }
 
 .navbar {
-    background: #4CAF50;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -135,4 +135,37 @@ img {
 .hero__intro {
     padding-right: 40px;
 
+}
+
+.hero__intro h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.hero__intro p {
+    color: #6b7280;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 10px;
+}
+
+.hero__actions .btn {
+    padding: 6px 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.hero__socials {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    right: 30px;
+    top: 20%;
 }
