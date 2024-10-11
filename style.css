@@ -273,4 +273,139 @@ img {
         /* Aumenta el tamaño de la fuente */
     }
 
-    .navbar__
+    .navbar__ @media (max-width: 768px) {
+        body {
+            overflow-x: hidden;
+            /* Evita el desbordamiento horizontal */
+        }
+
+        .navbar {
+            padding: 10px 15px;
+            /* Ajusta el padding */
+            flex-direction: column;
+            /* Coloca los elementos en columna */
+            align-items: center;
+            /* Centra los elementos */
+            width: 100%;
+            /* Ancho completo */
+        }
+
+        .navbar__logo {
+            margin-bottom: 10px;
+            /* Añade margen inferior */
+        }
+
+        .navbar__menu {
+            flex-direction: column;
+            /* Cambia a columna */
+            gap: 10px;
+            /* Espacio entre enlaces */
+            width: 100%;
+            /* Ancho completo */
+            text-align: center;
+            /* Centra el texto */
+        }
+
+        .navbar__actions {
+            flex-direction: column;
+            /* Cambia a columna */
+            gap: 10px;
+            /* Espacio entre acciones */
+            width: 100%;
+            /* Ancho completo */
+            align-items: center;
+            /* Centra los elementos */
+        }
+
+        .hero {
+            padding: 30px 15px;
+            /* Ajusta el padding */
+            flex-direction: column;
+            /* Cambia a columna */
+            align-items: center;
+            /* Centra los elementos */
+            gap: 20px;
+            /* Espacio entre elementos */
+            height: auto;
+            /* Permite altura dinámica */
+        }
+
+        .hero__content,
+        .hero__intro {
+            width: 100%;
+            /* Usa el ancho completo */
+            text-align: center;
+            /* Centra el texto */
+        }
+
+        .hero__content h2 {
+            font-size: 28px;
+            /* Reduce el tamaño de la fuente */
+            line-height: 36px;
+            /* Reduce el interlineado */
+            margin: 10px 0;
+            /* Añade margen */
+        }
+
+        .hero__intro h3 {
+            font-size: 20px;
+            /* Reduce el tamaño de la fuente */
+            line-height: 28px;
+            /* Reduce el interlineado */
+            margin: 5px 0;
+            /* Añade margen */
+        }
+
+        .hero__intro p {
+            font-size: 14px;
+            /* Ajusta el tamaño de la fuente */
+            margin: 5px 0;
+            /* Añade margen */
+        }
+
+        .hero__actions {
+            flex-direction: column;
+            /* Cambia a columna */
+            gap: 10px;
+            /* Espacio entre botones */
+            align-items: center;
+            /* Centra los botones */
+            width: 100%;
+            /* Ancho completo */
+        }
+
+        .hero__actions .btn {
+            padding: 10px 15px;
+            /* Ajusta el padding */
+            font-size: 14px;
+            /* Aumenta el tamaño de la fuente */
+            width: 80%;
+            /* Botones ocupan el 80% del ancho */
+        }
+
+        .btn {
+            width: 100%;
+            /* Botones ocupan el ancho completo */
+        }
+
+        .navbar__location {
+            text-align: center;
+            /* Centra la información de la ubicación */
+            margin: 10px 0;
+            /* Añade margen */
+        }
+
+        .navbar__location h5 {
+            font-size: 14px;
+            /* Aumenta el tamaño de la fuente */
+        }
+
+        .navbar__location p {
+            font-size: 12px;
+            /* Aumenta el tamaño de la fuente */
+        }
+
+        img {
+            width: 100%;
+            /* Asegura que las imágenes sean responsivas */
+            height: auto;
