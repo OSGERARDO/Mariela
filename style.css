@@ -170,30 +170,14 @@ img {
     top: 20%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 768px) {
     .navbar {
         padding: 10px 20px;
         /* Reduce el padding */
         flex-direction: column;
         /* Cambia a columna para mejor disposición */
-        align-items: flex-start;
-        /* Alinea elementos al inicio */
+        align-items: center;
+        /* Alinea los elementos al centro */
     }
 
     .navbar__menu {
@@ -201,6 +185,19 @@ img {
         /* Cambia a columna */
         gap: 10px;
         /* Reduce el espacio entre enlaces */
+        width: 100%;
+        /* Asegura que ocupe el ancho completo */
+    }
+
+    .navbar__actions {
+        flex-direction: column;
+        /* Cambia a columna */
+        gap: 10px;
+        /* Reduce el espacio entre acciones */
+        width: 100%;
+        /* Asegura que ocupe el ancho completo */
+        align-items: center;
+        /* Alinea los elementos al centro */
     }
 
     .hero {
@@ -210,6 +207,8 @@ img {
         /* Cambia a columna */
         align-items: center;
         /* Alinea los elementos al centro */
+        gap: 20px;
+        /* Espacio entre elementos */
         height: auto;
         /* Ajusta la altura para contenido dinámico */
     }
@@ -244,8 +243,10 @@ img {
     .hero__actions {
         flex-direction: column;
         /* Cambia a columna */
-        gap: 8px;
+        gap: 10px;
         /* Reduce el espacio entre botones */
+        align-items: center;
+        /* Centra los botones */
     }
 
     .hero__actions .btn {
@@ -253,6 +254,8 @@ img {
         /* Ajusta el padding */
         font-size: 14px;
         /* Aumenta el tamaño de la fuente */
+        width: 100%;
+        /* Botones ocupan el ancho completo */
     }
 
     .btn {
@@ -260,13 +263,9 @@ img {
         /* Botones ocupan el ancho completo */
     }
 
-    .navbar__actions {
-        flex-direction: column;
-        /* Cambia a columna */
-        align-items: flex-start;
-        /* Alinea elementos al inicio */
-        gap: 10px;
-        /* Reduce el espacio entre acciones */
+    .navbar__location {
+        text-align: center;
+        /* Centra la información de la ubicación */
     }
 
     .navbar__location h5 {
@@ -274,15 +273,4 @@ img {
         /* Aumenta el tamaño de la fuente */
     }
 
-    .navbar__location p {
-        font-size: 12px;
-        /* Aumenta el tamaño de la fuente */
-    }
-
-    img {
-        width: 100%;
-        /* Asegura que las imágenes sean responsivas */
-        height: auto;
-        /* Mantiene la proporción */
-    }
-}
+    .navbar__
