@@ -114,9 +114,26 @@ img {
     height: calc(100vh - (75px));
 }
 
+.hero::before {
+    content: "";
+    background-image: url("assets/yuri-shirota-p0hDztR46cw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    /* Ajusta la opacidad aquí */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 .hero__content,
 .hero_intro {
     width: 50%;
+
 }
 
 
@@ -142,7 +159,7 @@ img {
 }
 
 .hero__intro {
-    padding-right: 40px;
+    padding-right: 70px;
 
 }
 
@@ -229,39 +246,37 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.skills__stats i {
+    font-size: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
 
+.skills__info {
+    background-color: #d5d5d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
 
+.skills__info h5 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.skills__info p {
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    color: #7a7a7a;
+    font-weight: 500;
+}
 
 /*estilos para dispositvos mobiles  */
 @media (max-width: 768px) {
