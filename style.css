@@ -374,14 +374,16 @@ img {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .project-card__image {
     width: 100%;
-    height: 200px;
+    height: auto;
     border-radius: 10px;
     object-position: top center;
     border: 1px solid #e5e7eb;
+    margin-bottom: 20px;
 }
 
 
@@ -422,7 +424,7 @@ img {
 /*estilos para dispositvos mobiles  */
 @media (max-width: 768px) {
     .navbar {
-        padding: 10px 20px;
+        padding: 4px 10px;
         /* Reduce el padding */
         flex-direction: column;
         /* Cambia a columna para mejor disposición */
@@ -433,6 +435,7 @@ img {
     .navbar__menu {
         flex-direction: column;
         /* Cambia a columna */
+        align-items: center;
         gap: 10px;
         /* Reduce el espacio entre enlaces */
         width: 100%;
