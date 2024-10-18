@@ -154,7 +154,11 @@ img {
 }
 
 
+.hero h2 {
+    padding: 30px;
+    gap: 10px;
 
+}
 
 
 .hero__image {
