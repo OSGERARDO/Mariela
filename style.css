@@ -13,6 +13,10 @@ a {
     color: #1f2937;
 }
 
+
+
+
+
 img {
     object-fit: cover;
 }
@@ -46,7 +50,8 @@ img {
 }
 
 .navbar {
-    background: linear-gradient(90deg, #FFDDC1, #FFD700, #A4EBF3, #FFC3A0);
+    /* background:linear-gradient(90deg, #FFDDC1, #FFD700, #A4EBF3, #FFC3A0); */
+    background-color: #ff00ee6c;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,6 +110,15 @@ img {
 }
 
 .hero {
+    background:
+        radial-gradient(at 9% 89%, hsla(215, 90%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 72% 6%, hsla(331, 74%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 24% 19%, hsla(14, 90%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 65% 6%, hsla(6, 79%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 20% 98%, hsla(316, 72%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 44% 9%, hsla(40, 96%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 10% 9%, hsla(76, 65%, 63%, 1) 0px, transparent 50%);
+    min-height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -116,7 +130,10 @@ img {
 
 .hero::before {
     content: "";
-    background-image: url("assets/yuri-shirota-p0hDztR46cw-unsplash.jpg");
+
+
+
+    background-image: url();
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,7 +149,7 @@ img {
 
 .hero__content,
 .hero_intro {
-    width: 40%;
+    width: 50%;
 
 }
 
@@ -140,12 +157,12 @@ img {
 
 
 
-/*.hero__image {
+.hero__image {
     width: 240px;
     height: 240px;
-    border-radius: 0px;
+    border-radius: 1000px;
 
-}*/
+}
 
 
 /*comentario*/
@@ -160,7 +177,7 @@ img {
 
 .hero__intro {
     padding-right: 40px;
-    background-color: #fff;
+    background-color: #ffffff00;
     border-radius: 30px;
 }
 
@@ -172,7 +189,7 @@ img {
 }
 
 .hero__intro p {
-    color: #6b7280;
+    color: #000000;
     font-weight: 500;
     margin-bottom: 30px;
 }
@@ -223,6 +240,19 @@ img {
 .skills_description,
 .skills__stats {
     width: 58%;
+
+}
+
+
+.skills__stats {
+    background:
+        radial-gradient(at 9% 89%, hsla(215, 90%, 73%, 1) 0px, transparent 50%),
+        radial-gradient(at 72% 6%, hsla(331, 74%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 24% 19%, hsla(14, 90%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 65% 6%, hsla(6, 79%, 76%, 1) 0px, transparent 50%),
+        radial-gradient(at 20% 98%, hsla(316, 72%, 64%, 1) 0px, transparent 50%),
+        radial-gradient(at 44% 9%, hsla(40, 96%, 77%, 1) 0px, transparent 50%),
+        radial-gradient(at 10% 9%, hsla(76, 65%, 63%, 1) 0px, transparent 50%);
 }
 
 .skills_description {
@@ -321,6 +351,7 @@ img {
 
 .category__title,
 .category__desc {
+    padding: 15px;
     width: 50%;
     display: flex;
     align-items: center;
@@ -331,7 +362,7 @@ img {
 }
 
 .category__title h4 {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 400;
 }
 
@@ -386,35 +417,9 @@ img {
     margin-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.category {
+    padding: 30px;
+}
 
 /*estilos para dispositvos mobiles  */
 @media (max-width: 768px) {
