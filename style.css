@@ -457,7 +457,199 @@ img {
     background: #000;
 }
 
-@media screen and(max-width:1230px) {
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos generales */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.navbar__logo {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos de la sección hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero__image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilos para la sección de habilidades */
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.skills_description {
+    margin-bottom: 20px;
+}
+
+.skills__stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Estilos para las tarjetas de proyecto */
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33% - 20px);
+    /* 3 columnas en pantallas grandes */
+    text-align: center;
+}
+
+.project-card__image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar__menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .skills__stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: calc(100% - 20px);
+        /* 1 columna en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero__image {
+        width: 120px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero h3 {
+        font-size: 18px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .skills_description p {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para la sección de experiencia */
+.showcase {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category__projects {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permitir que las tarjetas se muevan a la siguiente fila si no hay espacio */
+    justify-content: center;
+    /* Centrar las tarjetas */
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33% - 20px);
+    /* 3 columnas en pantallas grandes */
+    max-width: 300px;
+    /* Limitar el ancho máximo de la tarjeta */
+    text-align: center;
+}
+
+.project-card__image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(50% - 20px);
+        /* 2 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: calc(100% - 20px);
+        /* 1 columna en pantallas pequeñas */
+    }
+}
+
+/* @media screen and(max-width:1230px) {
     .hero__image {
         width: 100%;
     }
@@ -489,11 +681,11 @@ img {
         font-size: 50px;
     }
 
-    .skill__info h5 {
+    .skills__info h5 {
         font-size: 20px;
     }
 
-    .skill__info p {
+    .skills__info p {
         font-size: 12px;
         width: 100%;
     }
@@ -515,3 +707,39 @@ img {
         width: 48%;
     }
 }
+
+@media and (max-width:992px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .hero {
+        padding: 100px 30px 40px;
+    }
+
+    .hero__intro h3 {
+        font-size: 22px;
+        line-height: 34px;
+
+    }
+
+    .hero__intro p {
+        font-size: 13px;
+    }
+
+    .hero__socials {
+        top: 6%;
+    }
+
+    .skills {
+        flex-direction: column;
+        padding: 60px 30px 80px;
+    }
+
+    .skills_desc,
+    .skills__stats,
+    .category__title,
+    .category__desc {
+        width: 100%;
+    }
+} */
