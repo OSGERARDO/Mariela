@@ -51,7 +51,7 @@ img {
 
 .navbar {
     /* background:linear-gradient(90deg, #FFDDC1, #FFD700, #A4EBF3, #FFC3A0); */
-    background-color: #ff00ee6c;
+    background-color: #ffffff6c;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -421,495 +421,97 @@ img {
     margin-bottom: 20px;
 }
 
+.project-card__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
 .category {
     padding: 30px;
 }
 
-/*estilos para dispositvos mobiles  */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 4px 10px;
-        /* Reduce el padding */
-        flex-direction: column;
-        /* Cambia a columna para mejor disposición */
-        align-items: center;
-        /* Alinea los elementos al centro */
-    }
+.project-card__info h5 {
+    font-size: 17px;
+    font-weight: 500;
+}
 
-    .navbar__menu {
-        flex-direction: column;
-        /* Cambia a columna */
-        align-items: center;
-        gap: 10px;
-        /* Reduce el espacio entre enlaces */
+.project-card__desc {
+    font-size: 13px;
+    color: #7a7a7a;
+}
+
+.project-card .btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 16px 0 10px 0;
+    border: none;
+    color: #fff;
+    background: #1f2937;
+}
+
+.project-card .btn:hover {
+    background: #000;
+}
+
+@media screen and(max-width:1230px) {
+    .hero__image {
         width: 100%;
-        /* Asegura que ocupe el ancho completo */
     }
 
-    .navbar__actions {
-        flex-direction: column;
-        /* Cambia a columna */
-        gap: 10px;
-        /* Reduce el espacio entre acciones */
-        width: 100%;
-        /* Asegura que ocupe el ancho completo */
-        align-items: center;
-        /* Alinea los elementos al centro */
-    }
-
-    .hero {
-        padding: 50px 20px;
-        /* Reduce el padding */
-        flex-direction: column;
-        /* Cambia a columna */
-        align-items: center;
-        /* Alinea los elementos al centro */
-        gap: 20px;
-        /* Espacio entre elementos */
-        height: auto;
-        /* Ajusta la altura para contenido dinámico */
-    }
-
-    .hero__content,
-    .hero__intro {
-        width: 100%;
-        /* Usa el ancho completo */
-        text-align: center;
-        /* Centra el texto */
-    }
 
     .hero__content h2 {
-        font-size: 30px;
-        /* Reduce el tamaño de la fuente */
-        line-height: 40px;
-        /* Reduce el interlineado */
+        font: 38px;
+        text-align: center;
     }
 
     .hero__intro h3 {
-        font-size: 24px;
-        /* Reduce el tamaño de la fuente */
-        line-height: 30px;
-        /* Reduce el interlineado */
+        font-size: 30px;
+
     }
 
     .hero__intro p {
-        font-size: 14px;
-        /* Ajusta el tamaño de la fuente */
+        font-size: 15px;
     }
 
-    .hero__actions {
-        flex-direction: column;
-        /* Cambia a columna */
-        gap: 10px;
-        /* Reduce el espacio entre botones */
-        align-items: center;
-        /* Centra los botones */
+    .skills_description {
+        padding-right: 20px;
     }
 
-    .hero__actions .btn {
-        padding: 8px 16px;
-        /* Ajusta el padding */
-        font-size: 14px;
-        /* Aumenta el tamaño de la fuente */
+    .skills__desciption h3 {
+        font-size: 26px;
+    }
+
+    .skills__stats i {
+        font-size: 50px;
+    }
+
+    .skill__info h5 {
+        font-size: 20px;
+    }
+
+    .skill__info p {
+        font-size: 12px;
         width: 100%;
-        /* Botones ocupan el ancho completo */
     }
 
-    .btn {
-        width: 100%;
-        /* Botones ocupan el ancho completo */
+    .category__title {
+        width: 40%;
     }
 
-    .navbar__location {
-        text-align: center;
-        /* Centra la información de la ubicación */
+    .category__desc {
+        width: 60%;
     }
 
-    .navbar__location h5 {
-        font-size: 14px;
-        /* Aumenta el tamaño de la fuente */
+    .category__projects {
+        flex-wrap: wrap;
+
     }
 
-    .navbar__ @media (max-width: 768px) {
-        body {
-            overflow-x: hidden;
-            /* Evita el desbordamiento horizontal */
-        }
-
-        .navbar {
-            padding: 10px 15px;
-            /* Ajusta el padding */
-            flex-direction: column;
-            /* Coloca los elementos en columna */
-            align-items: center;
-            /* Centra los elementos */
-            width: 100%;
-            /* Ancho completo */
-        }
-
-        .navbar__logo {
-            margin-bottom: 10px;
-            /* Añade margen inferior */
-        }
-
-        .navbar__menu {
-            flex-direction: column;
-            /* Cambia a columna */
-            gap: 10px;
-            /* Espacio entre enlaces */
-            width: 100%;
-            /* Ancho completo */
-            text-align: center;
-            /* Centra el texto */
-        }
-
-        .navbar__actions {
-            flex-direction: column;
-            /* Cambia a columna */
-            gap: 10px;
-            /* Espacio entre acciones */
-            width: 100%;
-            /* Ancho completo */
-            align-items: center;
-            /* Centra los elementos */
-        }
-
-        .hero {
-            padding: 30px 15px;
-            /* Ajusta el padding */
-            flex-direction: column;
-            /* Cambia a columna */
-            align-items: center;
-            /* Centra los elementos */
-            gap: 20px;
-            /* Espacio entre elementos */
-            height: auto;
-            /* Permite altura dinámica */
-        }
-
-        .hero__content,
-        .hero__intro {
-            width: 100%;
-            /* Usa el ancho completo */
-            text-align: center;
-            /* Centra el texto */
-        }
-
-        .hero__content h2 {
-            font-size: 28px;
-            /* Reduce el tamaño de la fuente */
-            line-height: 36px;
-            /* Reduce el interlineado */
-            margin: 10px 0;
-            /* Añade margen */
-        }
-
-        .hero__intro h3 {
-            font-size: 20px;
-            /* Reduce el tamaño de la fuente */
-            line-height: 28px;
-            /* Reduce el interlineado */
-            margin: 5px 0;
-            /* Añade margen */
-        }
-
-        .hero__intro p {
-            font-size: 14px;
-            /* Ajusta el tamaño de la fuente */
-            margin: 5px 0;
-            /* Añade margen */
-        }
-
-        .hero__actions {
-            flex-direction: column;
-            /* Cambia a columna */
-            gap: 10px;
-            /* Espacio entre botones */
-            align-items: center;
-            /* Centra los botones */
-            width: 100%;
-            /* Ancho completo */
-        }
-
-        .hero__actions .btn {
-            padding: 10px 15px;
-            /* Ajusta el padding */
-            font-size: 14px;
-            /* Aumenta el tamaño de la fuente */
-            width: 80%;
-            /* Botones ocupan el 80% del ancho */
-        }
-
-        .btn {
-            width: 100%;
-            /* Botones ocupan el ancho completo */
-        }
-
-        .navbar__location {
-            text-align: center;
-            /* Centra la información de la ubicación */
-            margin: 10px 0;
-            /* Añade margen */
-        }
-
-        .navbar__location h5 {
-            font-size: 14px;
-            /* Aumenta el tamaño de la fuente */
-        }
-
-        .navbar__location p {
-            font-size: 12px;
-            /* Aumenta el tamaño de la fuente */
-        }
-
-        img {
-            width: 100%;
-            /* Asegura que las imágenes sean responsivas */
-            height: auto;
-        }
-
-
-
-
-        /* estilos para dispositvos mobiles */
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 4px 10px;
-                /* Reduce el padding */
-                flex-direction: column;
-                /* Cambia a columna para mejor disposición */
-                align-items: center;
-                /* Alinea los elementos al centro */
-            }
-
-            .navbar__menu {
-                flex-direction: column;
-                /* Cambia a columna */
-                align-items: center;
-                gap: 10px;
-                /* Reduce el espacio entre enlaces */
-                width: 100%;
-                /* Asegura que ocupe el ancho completo */
-            }
-
-            .navbar__actions {
-                flex-direction: column;
-                /* Cambia a columna */
-                gap: 10px;
-                /* Reduce el espacio entre acciones */
-                width: 100%;
-                /* Asegura que ocupe el ancho completo */
-                align-items: center;
-                /* Alinea los elementos al centro */
-            }
-
-            .hero {
-                padding: 50px 20px;
-                /* Reduce el padding */
-                flex-direction: column;
-                /* Cambia a columna */
-                align-items: center;
-                /* Alinea los elementos al centro */
-                gap: 20px;
-                /* Espacio entre elementos */
-                height: auto;
-                /* Ajusta la altura para contenido dinámico */
-            }
-
-            .hero__content,
-            .hero__intro {
-                width: 100%;
-                /* Usa el ancho completo */
-                text-align: center;
-                /* Centra el texto */
-            }
-
-            .hero__content h2 {
-                font-size: 30px;
-                /* Reduce el tamaño de la fuente */
-                line-height: 40px;
-                /* Reduce el interlineado */
-            }
-
-            .hero__intro h3 {
-                font-size: 24px;
-                /* Reduce el tamaño de la fuente */
-                line-height: 30px;
-                /* Reduce el interlineado */
-            }
-
-            .hero__intro p {
-                font-size: 14px;
-                /* Ajusta el tamaño de la fuente */
-            }
-
-            .hero__actions {
-                flex-direction: column;
-                /* Cambia a columna */
-                gap: 10px;
-                /* Reduce el espacio entre botones */
-                align-items: center;
-                /* Centra los botones */
-            }
-
-            .hero__actions .btn {
-                padding: 8px 16px;
-                /* Ajusta el padding */
-                font-size: 14px;
-                /* Aumenta el tamaño de la fuente */
-                width: 100%;
-                /* Botones ocupan el ancho completo */
-            }
-
-            .btn {
-                width: 100%;
-                /* Botones ocupan el ancho completo */
-            }
-
-            .navbar__location {
-                text-align: center;
-                /* Centra la información de la ubicación */
-            }
-
-            .navbar__location h5 {
-                font-size: 14px;
-                /* Aumenta el tamaño de la fuente */
-            }
-
-            .navbar__ @media (max-width: 768px) {
-                body {
-                    overflow-x: hidden;
-                    /* Evita el desbordamiento horizontal */
-                }
-
-                .navbar {
-                    padding: 10px 15px;
-                    /* Ajusta el padding */
-                    flex-direction: column;
-                    /* Coloca los elementos en columna */
-                    align-items: center;
-                    /* Centra los elementos */
-                    width: 100%;
-                    /* Ancho completo */
-                }
-
-                .navbar__logo {
-                    margin-bottom: 10px;
-                    /* Añade margen inferior */
-                }
-
-                .navbar__menu {
-                    flex-direction: column;
-                    /* Cambia a columna */
-                    gap: 10px;
-                    /* Espacio entre enlaces */
-                    width: 100%;
-                    /* Ancho completo */
-                    text-align: center;
-                    /* Centra el texto */
-                }
-
-                .navbar__actions {
-                    flex-direction: column;
-                    /* Cambia a columna */
-                    gap: 10px;
-                    /* Espacio entre acciones */
-                    width: 100%;
-                    /* Ancho completo */
-                    align-items: center;
-                    /* Centra los elementos */
-                }
-
-                .hero {
-                    padding: 30px 15px;
-                    /* Ajusta el padding */
-                    flex-direction: column;
-                    /* Cambia a columna */
-                    align-items: center;
-                    /* Centra los elementos */
-                    gap: 20px;
-                    /* Espacio entre elementos */
-                    height: auto;
-                    /* Permite altura dinámica */
-                }
-
-                .hero__content,
-                .hero__intro {
-                    width: 100%;
-                    /* Usa el ancho completo */
-                    text-align: center;
-                    /* Centra el texto */
-                }
-
-                .hero__content h2 {
-                    font-size: 28px;
-                    /* Reduce el tamaño de la fuente */
-                    line-height: 36px;
-                    /* Reduce el interlineado */
-                    margin: 10px 0;
-                    /* Añade margen */
-                }
-
-                .hero__intro h3 {
-                    font-size: 20px;
-                    /* Reduce el tamaño de la fuente */
-                    line-height: 28px;
-                    /* Reduce el interlineado */
-                    margin: 5px 0;
-                    /* Añade margen */
-                }
-
-                .hero__intro p {
-                    font-size: 14px;
-                    /* Ajusta el tamaño de la fuente */
-                    margin: 5px 0;
-                    /* Añade margen */
-                }
-
-                .hero__actions {
-                    flex-direction: column;
-                    /* Cambia a columna */
-                    gap: 10px;
-                    /* Espacio entre botones */
-                    align-items: center;
-                    /* Centra los botones */
-                    width: 100%;
-                    /* Ancho completo */
-                }
-
-                .hero__actions .btn {
-                    padding: 10px 15px;
-                    /* Ajusta el padding */
-                    font-size: 14px;
-                    /* Aumenta el tamaño de la fuente */
-                    width: 80%;
-                    /* Botones ocupan el 80% del ancho */
-                }
-
-                .btn {
-                    width: 100%;
-                    /* Botones ocupan el ancho completo */
-                }
-
-                .navbar__location {
-                    text-align: center;
-                    /* Centra la información de la ubicación */
-                    margin: 10px 0;
-                    /* Añade margen */
-                }
-
-                .navbar__location h5 {
-                    font-size: 14px;
-                    /* Aumenta el tamaño de la fuente */
-                }
-
-                .navbar__location p {
-                    font-size: 12px;
-                    /* Aumenta el tamaño de la fuente */
-                }
-
-                img {
-                    width: 100%;
-                    /* Asegura que las imágenes sean responsivas */
-                    height: auto;
-                }
+    .project-card {
+        width: 48%;
+    }
+}
